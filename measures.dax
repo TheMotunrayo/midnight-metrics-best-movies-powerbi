@@ -1,0 +1,29 @@
+// Midnight Metrics: Best Movie Dashboard
+// All measures are stored in the "Movies Measures" table.
+
+// Number of films (rows) in the current filter context
+Total Movies = COUNTROWS(Movies)
+
+// Worldwide earnings
+Total Box Office = SUM(Movies[Global Box Office])
+
+// Production budgets
+Total Budget = SUM(Movies[Budget])
+
+// Profit column created in Power Query (Global Box Office - Budget)
+Total Profit = SUM(Movies[Profit])
+
+// Profit made for every dollar of budget; DIVIDE returns blank instead of an error on zero
+ROI % = DIVIDE([Total Profit], [Total Budget])
+
+// Average critic score; blanks (originally zeros) are ignored
+Avg RT Rating = AVERAGE(Movies[Rotten Tomatoes Rating])
+
+// Average runtime in minutes; blanks (originally zeros) are ignored
+Avg Movie Length = AVERAGE(Movies[Movie Length (min)])
+
+// Fair comparison across groups of different sizes
+Avg Box Office per Movie = DIVIDE([Total Box Office], [Total Movies])
+
+// Share of films that earned more than their budget
+Profitable Movies % = DIVIDE(COUNTROWS(FILTER(Movies, Movies[Profit] > 0)), [Total Movies])
