@@ -3,6 +3,8 @@ A five page Power BI dashboard exploring what drives box office success across 1
 
 **Connect with me:** [LinkedIn](https://www.linkedin.com/in/motunrayo-olorungbohunmi)
 
+<img width="888" height="497" alt="Screenshot 2026-10-27 155431" src="https://github.com/user-attachments/assets/7b8f6375-45ec-4ab1-8ef7-6547b9e93f5e" />
+
 **Objective**:
 The dashboard answers four business questions, one per page:
 
@@ -64,7 +66,13 @@ Profitable Movies % = DIVIDE(COUNTROWS(FILTER(Movies, Movies[Profit] > 0)), [Tot
 
 The Release Year, Genre and Age Rating slicers are synced across all pages.
 
-# Genres & Age Ratings, Studios & Directors, Release Timing & Runtime; Insights & Recommendations
+<img width="888" height="497" alt="Screenshot 2026-10-27 155501" src="https://github.com/user-attachments/assets/c6dece1a-07eb-44d6-8d00-27577f5453c1" />
+
+<img width="892" height="500" alt="Screenshot 2026-10-27 155530" src="https://github.com/user-attachments/assets/4e111c75-b53f-4546-a6c9-b45872569304" />
+
+<img width="892" height="498" alt="Screenshot 2026-10-27 155609" src="https://github.com/user-attachments/assets/ea6bfc82-6918-46ec-b8ec-1e5cbe9b7557" />
+
+<img width="889" height="496" alt="Screenshot 2026-10-27 155633" src="https://github.com/user-attachments/assets/f76c34df-ae62-481c-8e96-d79287df2b97" />
 
 ## Key Findings (1997–2015)
 
