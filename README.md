@@ -53,6 +53,7 @@ Avg Box Office per Movie = DIVIDE([Total Box Office], [Total Movies])
 Profitable Movies % = DIVIDE(COUNTROWS(FILTER(Movies, Movies[Profit] > 0)), [Total Movies])
 ```
 **Dashboard Pages**
+
 | Page | What it shows |
 |---|---|
 | **Overview** | KPI cards, box office and number of releases by year, box office by genre, age-rating mix |
@@ -60,3 +61,36 @@ Profitable Movies % = DIVIDE(COUNTROWS(FILTER(Movies, Movies[Profit] > 0)), [Tot
 | **Studios & Directors** | Top 10 studios and directors, top 10 films table with data bars and colour-coded profit |
 | **Release Timing & Runtime** | Monthly releases vs average earnings, genre-by-month heatmap, average box office by 30-minute runtime bands |
 | **Insights & Recommendations** | One-page summary, plus data and methodology notes |
+
+The Release Year, Genre and Age Rating slicers are synced across all pages.
+
+# Genres & Age Ratings, Studios & Directors, Release Timing & Runtime; Insights & Recommendations
+
+## Key Findings (1997–2015)
+
+**Headline numbers:** 983 films, $176bn global box office, $57bn total budget, $119bn profit, 207% ROI, average Rotten Tomatoes rating of 3.21.
+
+- **Volume doesn't equal earnings.** Adventure, Action, Comedy and Drama generate about 83% of box office. Drama has the most films (254) but earns $22bn, less than half of Adventure's $51bn from 115 films.
+- **Critics and profits don't always agree.** Drama is the highest-rated major genre (3.43) but has the lowest ROI (139%). The top 10 earners still average a 3.6 rating, so the biggest hits are rarely critical failures.
+- **One bad record can rewrite a finding.** Horror's ROI is 204.5% with Priest and 279.2% without it.
+- **Family-friendly films earn more per release.** R-rated films average $98M per film, against $229M for PG-13, $271M for PG and $347M for G.
+- **Efficiency beats volume.** Universal leads with $13.9bn from 48 films, but Walt Disney Pictures earned $10.8bn from 25 (about $430M vs $290M per film). David Yates earned $4.6bn from 4 films; Clint Eastwood earned $2.2bn from 14.
+- **Release timing matters.** May, June and July hold about 25% of releases but about 40% of box office. January ($76M per film) and September ($78M) are the weakest months.
+- **Longer films earn more, but not because they're long.** Films of 150–179 minutes average $588M vs $148M for 90–119 minutes, because long films tend to be franchise epics.
+
+## Recommendations
+1. Build the slate around Adventure and Action franchises.
+2. Balance it with low-budget, high-ROI genres such as Romantic Comedy and Horror.
+3. Aim big-budget films at PG-13 and PG audiences.
+4. Release tentpoles in May–July or November–December; keep January, September and October for smaller films.
+5. Invest in proven franchises and directors.
+6. Don't rely on reviews for revenue, but keep quality high on tentpoles.
+7. Improve the data: validate figures, standardise studio names, fill missing values, and add marketing costs and inflation adjustment.
+
+## Limitations
+- ROI covers production budgets only; marketing, distribution and the cinemas' share of revenue aren't included.
+- Some figures appear erroneous or inconsistent (Priest; Avatar's $469M budget).
+- 2015 is a partial year (data ends 7 August 2015).
+- Small groups (Western, Concert/Performance, Documentary, NC-17, G) can produce extreme values.
+- Studio names are inconsistent, which splits totals for companies such as Disney.
+- The dataset is a sample of 1,000 films, not the whole industry.
