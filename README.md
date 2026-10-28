@@ -102,3 +102,33 @@ The Release Year, Genre and Age Rating slicers are synced across all pages.
 - Small groups (Western, Concert/Performance, Documentary, NC-17, G) can produce extreme values.
 - Studio names are inconsistent, which splits totals for companies such as Disney.
 - The dataset is a sample of 1,000 films, not the whole industry.
+
+```
+├── README.md
+├── Motunrayo Best Movie Dashboard.pbix   Power BI file
+├── Best_Movie_Dashboard.pdf              PDF export of all five pages
+├── measures.dax                          All DAX measures
+└── screenshots/                          One image per dashboard page
+```
+
+## How to Open
+
+1. Download the `.pbix` file.
+2. Open it in [Power BI Desktop](https://www.microsoft.com/power-platform/products/power-bi/desktop) (free, Windows).
+3. To refresh the data, update the data source path under **Transform data → Data source settings** to point to your copy of the dataset.
+
+No Power BI? Open the PDF instead.
+
+---
+
+## About Me
+
+Hi, I'm **Motunrayo Olorungbohunmi**, a data analyst turning raw data into clear stories with Power BI, Excel Python,and SQL. I'm documenting my journey, my projects and everything I learn along the way.
+
+This project is part of that journey. If you have feedback, questions or ideas, I'd love to hear from you.
+
+- 💼 **LinkedIn:** [LinkedIn](https://www.linkedin.com/in/motunrayo-olorungbohunmi)
+- ✍️ **Medium:** [add your Medium profile link here]
+- 📧 **Email:** [motundoreen@gmail.com]
+
+*Built by Motunrayo Olorungbohunmi · October 2026*
